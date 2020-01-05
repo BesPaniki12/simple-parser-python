@@ -1,6 +1,5 @@
-# все перенес
 
-from datetime import time
+# from datetime import timegit
 import csv
 import requests
 from bs4 import BeautifulSoup as bs
