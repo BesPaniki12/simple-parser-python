@@ -20,7 +20,7 @@ def za_parse(base_url, headers):
         soup = bs(request.content, 'lxml')
         try:
             pagination = soup.find_all('li',attrs={'class':'paginator__item'})
-            count = int(pagination[-4].text)
+            count = int(pagination[-2].text)
             for i in range(count):
                 url = f'https://zaochnik.com/lenta_rabot/?page={i}'
                 if url not in urls:
