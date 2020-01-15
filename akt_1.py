@@ -1,14 +1,12 @@
 
-# from datetime import timegit
 import csv
 import requests
 from bs4 import BeautifulSoup as bs
-import lxml
+# import lxml
+
 headers = {'accept':'*/*',
       'user-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0'}
-
 base_url = 'https://zaochnik.com/lenta_rabot/?page='
-
 def za_parse(base_url, headers):
     lenta = []
     urls = []
